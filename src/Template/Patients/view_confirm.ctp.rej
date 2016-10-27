@@ -1,0 +1,19 @@
+diff a/build4/src/Template/Patients/view_confirm.ctp b/build4/src/Template/Patients/view_confirm.ctp	(rejected hunks)
+@@ -5,6 +5,17 @@
+ $TotalPrice =0;
+ ?>
+ 
++<?php foreach ($refcontact as $contact): ?>
++<?php if(($contact->id) == ($patient->referrer_id)): ?>
++  <?php if(($contact->status) == "Active"): ?>
++<?php foreach($contact->refcontacts as $people): ?>
++   <?php $jobTitle=$people->type;
++    $refcontact_first=$people->full_name;
++    ?>
++<?php endforeach; ?>
++  <?php endif; ?>
++   <?php endif; ?>
++<?php endforeach; ?>  
+ 
+ 
+ 

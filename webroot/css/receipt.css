@@ -1,0 +1,47 @@
+.header {
+	position: absolute;
+	top: 8px;
+	right: 16px;
+}
+
+.persInfo {
+	position: absolute;
+	top: 120px;
+
+}
+
+.persAdd {
+	position: absolute;
+	top: 120px;
+	right: 16px;
+}
+
+.invoice {
+	position: absolute;
+	top: 260px;
+}
+
+.invoicenum {
+	position: absolute;
+	top: 260px;
+	right: 33px;
+}
+
+.custnum {
+	position: absolute;
+	top: 420px
+}
+
+.paymentmethod {
+	position: absolute;
+	top: 500px;
+}
+
+.table {
+	position: absolute;
+	top: 600px;
+}
+
+table, th, td {
+	border: 1px solid black;
+}

@@ -1,0 +1,48 @@
+.test1 {
+  overflow-y: scroll;
+  position: fixed;
+  top: 25%;
+  bottom: 12%;
+  /*leave left at 50!*/
+  left: 34%;
+  right: 10%;
+  margin-left: 10%;
+  width: 54%;
+  background-color: transparent;
+}
+
+.test2 {
+/* overflow-y: scroll;*/
+  position: fixed;
+  top: 25%;
+  bottom: 10%;
+  left: 15%;
+  /*leave right at 50!*/
+  right: 50%;
+  margin-right: 10%;
+  width: 25%;
+  background-color: transparent;
+}
+
+
+body{
+  text-align: left;
+ 
+}
+table {
+  float: left;
+  margin: 0 auto;
+}
+
+.tabs-content {
+	color : white;
+  background-color: #428bca;
+  padding : 5px 15px;
+}
+
+#exTab2 h3 {
+  color : white;
+  background-color: #428bca;
+  padding : 5px 15px;
+}
+

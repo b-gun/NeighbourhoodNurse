@@ -1,0 +1,99 @@
+/*View*/
+body {
+	text-align: center;
+	margin-top: -10px;
+}
+
+.navbar {
+	background-color: #FF9973;
+	border-color: transparent;
+	font-color: black;
+}
+
+.navbar-inverse .navbar-brand {
+color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+color: black
+;
+}
+
+
+
+
+a {
+color: black;
+
+}
+
+b {
+color: #337ab7;
+text-decoration: none;
+
+}
+
+
+.navbar-custom {
+	color: black;
+	font-color: black;
+}
+
+
+/*Sidebar CSS*/
+.navbar-default {
+	margin-top: 25px;
+	margin-left: -80px
+}
+
+li {
+	text-align: left;
+}
+
+form {
+	text-align: left;
+
+}
+
+/*End of Sidebar CSS*/
+
+
+
+table, th, td {
+	border: 1px solid black;
+}
+
+th, td {
+	padding: 15px;
+    text-align: left;
+}
+
+th {
+	background-color: #ff9973;
+	color: black;
+}
+
+table {
+	float: center;
+	margin: 0 auto;
+}
+
+.table1 {
+	position: absolute;
+	float: right;	
+}
+
+.table2 {
+	position: absolute;
+	float: right;
+}
+
+/****************************/
+
+.edit-form {
+	width: 100%;
+	background-color: white; 
+}	
+
+
+

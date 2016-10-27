@@ -1,0 +1,57 @@
+diff a/build4/src/Template/Patients/view.ctp b/build4/src/Template/Patients/view.ctp	(rejected hunks)
+@@ -30,31 +30,42 @@
+             var Cells = Row.getElementsByTagName("td");
+             if (Cells[6].innerText == "Completed")
+             {
+-                alert("This visit has been completed");
+-                event.preventDefault();
+-            }
+-            else{
++             if($(this).is(":checked")){
+ 
+-                  if($(this).is(":checked")){
++                                    document.getElementById($id).style.backgroundColor = "#B4CDCD";
+ 
+-                                           document.getElementById($id).style.backgroundColor = "#B4CDCD";
+-                                           //document.getElementById($id).style.backgroundColor = "#E0EEEE";
+-                                           storedVisits.push($id);
++                                    storedVisits.push($id);
+ 
+-                            }
+-                            else if($(this).is(":not(:checked)")){
+-                                 $id = $(this).closest('tr').attr('id');
+-                                  document.getElementById($id).style.backgroundColor = "white";
++                                        }
++                                    else if($(this).is(":not(:checked)")){
++                                    $id = $(this).closest('tr').attr('id');
++                                   document.getElementById($id).style.backgroundColor = "white";
+                                   var index = storedVisits.indexOf($id);
+                                   storedVisits.splice(index, 1);
+-                            }
++                                        }
++            }
++            else{
++                   if (Cells[6].innerText == "Invoiced"){
++
++                        alert("This visit has been invoiced");
++                        event.preventDefault();
++                     }
++                     else{
++                         alert("This visit hasn't been completed");
++                         event.preventDefault();
++                     }
++
+             }
+         });
+     });
+    function generateTable(){
+ 
+                 if (storedVisits.length >0){
++<<<<<<< HEAD
+                  window.location.assign("http://localhost/team9_nurse/build4/patients/view_confirm/"+
++=======
++                 window.location.assign("http://localhost/Team9/build4/patients/view_confirm/"+
++>>>>>>> cfbfbf813d86306cdbd051a2b09970ea227ff3b6
+                   <?php echo $patient->id; ?> +"/"+storedVisits);
+                 }
+                 else {

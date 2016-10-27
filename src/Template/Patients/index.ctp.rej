@@ -1,0 +1,15 @@
+diff a/build4/src/Template/Patients/index.ctp b/build4/src/Template/Patients/index.ctp	(rejected hunks)
+@@ -120,9 +120,11 @@
+ </nav> 
+ 
+ 
+-<div id="page-wrapper">
+-  <div class="row">
++<!-- <div id="page-wrapper"> -->
++ <div class="row">
+     <div class="view">
++
++
+ <div class="patients index large-9 medium-8 columns content">
+     <h3><?= __('Patients') ?></h3>
+     <table id="patients" margin-left= "200px" cellpadding="0" cellspacing="0">
